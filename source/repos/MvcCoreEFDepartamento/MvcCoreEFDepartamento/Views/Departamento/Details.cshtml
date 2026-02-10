@@ -1,0 +1,21 @@
+@model Departamento
+
+
+<h1>Detalles del Departamento</h1>
+
+<hr />
+<dl class="row">
+    <dt class="col-sm-3">Número de Departamento</dt>
+    <dd class="col-sm-9">@Model.idDepartamento</dd>
+    
+    <dt class="col-sm-3">Nombre</dt>
+    <dd class="col-sm-9">@Model.DNombre</dd>
+    
+    <dt class="col-sm-3">Localización</dt>
+    <dd class="col-sm-9">@Model.Loc</dd>
+</dl>
+
+<div>
+     
+     <a asp-action="Index" asp-controller="Departamento" class="btn btn-secondary">Volver al Listado</a>
+</div>

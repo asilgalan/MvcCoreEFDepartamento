@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Crear Departamento";
+}
+
+<h1>Crear Departamento</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="idDepartamento" class="form-label">Número de Departamento</label>
+        <input type="number" class="form-control" id="idDepartamento" name="idDepartamento">
+    </div>
+    <div class="mb-3">
+        <label for="Nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control"  name="DNombre">
+    </div>
+    <div class="mb-3">
+        <label for="Loc" class="form-label">Localización</label>
+        <input type="text" class="form-control" id="Loc" name="Loc">
+    </div>
+    <button type="submit" class="btn btn-primary">Crear</button>
+    <a asp-action="Index" asp-controller="Departamento" class="btn btn-secondary">Volver al Listado</a>
+</form>
